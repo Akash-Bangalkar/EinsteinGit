@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AIApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <developerName>Winner_of_Today_s_Match</developerName>
+    <masterLabel>Winner of Today&apos;s Match</masterLabel>
+    <status>Enabled</status>
+    <type>PredictionBuilder</type>
+</AIApplication>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MLPredictionDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aiApplicationDeveloperName>Winner_of_Today_s_Match</aiApplicationDeveloperName>
+    <description>Cricket Match Prediction</description>
+    <developerName>mlpd_Winner_of_Today_s_Match_1685958727908_v0</developerName>
+    <masterLabel>Winner of Today&apos;s Match</masterLabel>
+    <negativeExpression>
+        <filterName>e6f5c7a5-f4b0-4130-9d46-037f7a9312e1</filterName>
+        <lhPredictionField>Account.Rating</lhPredictionField>
+        <operation>Equals</operation>
+        <rhType>String</rhType>
+        <rhValue>Cold</rhValue>
+    </negativeExpression>
+    <positiveExpression>
+        <filterName>c7129864-c0dd-4bb8-8919-8ba8061f16b2</filterName>
+        <lhPredictionField>Account.Rating</lhPredictionField>
+        <operation>Equals</operation>
+        <rhType>String</rhType>
+        <rhValue>Hot</rhValue>
+    </positiveExpression>
+    <pushbackField>Account.Winner__c</pushbackField>
+    <status>Enabled</status>
+    <type>BinaryClassification</type>
+</MLPredictionDefinition>
