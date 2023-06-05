@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bot xmlns="http://soap.sforce.com/2006/04/metadata">
+    <botMlDomain>
+        <label>Astro</label>
+        <name>Astro</name>
+    </botMlDomain>
+    <botVersions>
+        <fullName>v1</fullName>
+        <botDialogs>
+            <botSteps>
+                <stepIdentifier>3ddb3e0f-b175-44ce-8f7d-29f6d404c224</stepIdentifier>
+                <type>Wait</type>
+            </botSteps>
+            <developerName>Check_my_order</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>Check my order</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <botDialogs>
+            <botSteps>
+                <stepIdentifier>eb6e6d55-2949-4867-b529-a61936d51013</stepIdentifier>
+                <type>Wait</type>
+            </botSteps>
+            <developerName>Report_a_order</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>Report a order</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <botDialogs>
+            <botSteps>
+                <stepIdentifier>439cdf1c-9e8b-45c0-9629-24f8972a8668</stepIdentifier>
+                <type>Wait</type>
+            </botSteps>
+            <developerName>Find_a_product</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>Find a product</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <botDialogs>
+            <botSteps>
+                <botMessages>
+                    <message>Hi, I&apos;m Astro, a digital assistant.</message>
+                    <messageIdentifier>fe33c5af-746c-41ce-a292-da2f3293e3bc</messageIdentifier>
+                </botMessages>
+                <stepIdentifier>21741275-190b-413f-9b95-05faf162c7a4</stepIdentifier>
+                <type>Message</type>
+            </botSteps>
+            <botSteps>
+                <botNavigation>
+                    <botNavigationLinks>
+                        <targetBotDialog>Main_Menu</targetBotDialog>
+                    </botNavigationLinks>
+                    <type>Redirect</type>
+                </botNavigation>
+                <stepIdentifier>59148334-181c-4f21-aed1-3d69ad92cd04</stepIdentifier>
+                <type>Navigation</type>
+            </botSteps>
+            <developerName>Welcome</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>Welcome</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <botDialogs>
+            <botSteps>
+                <botNavigation>
+                    <botNavigationLinks>
+                        <label>Check my order</label>
+                        <targetBotDialog>Check_my_order</targetBotDialog>
+                    </botNavigationLinks>
+                    <botNavigationLinks>
+                        <label>Report a order</label>
+                        <targetBotDialog>Report_a_order</targetBotDialog>
+                    </botNavigationLinks>
+                    <botNavigationLinks>
+                        <label>Find a product</label>
+                        <targetBotDialog>Find_a_product</targetBotDialog>
+                    </botNavigationLinks>
+                    <type>Redirect</type>
+                </botNavigation>
+                <stepIdentifier>0311e82b-8a01-4dd4-bc31-80af02e78525</stepIdentifier>
+                <type>Navigation</type>
+            </botSteps>
+            <developerName>Main_Menu</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>Main Menu</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <botDialogs>
+            <botSteps>
+                <conversationSystemMessage>
+                    <type>Transfer</type>
+                </conversationSystemMessage>
+                <stepIdentifier>bd8c1513-d2de-41b1-8873-61be896221cd</stepIdentifier>
+                <type>SystemMessage</type>
+            </botSteps>
+            <developerName>Transfer_To_Agent</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>Transfer To Agent</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <botDialogs>
+            <botSteps>
+                <botMessages>
+                    <message>Goodbye! Click the &quot;End Chat&quot; button to end this chat</message>
+                    <messageIdentifier>41e852c5-7c78-42f9-a9cd-4a805926d2be</messageIdentifier>
+                </botMessages>
+                <stepIdentifier>1d7dfb11-1daf-436f-8c60-a82342f11b58</stepIdentifier>
+                <type>Message</type>
+            </botSteps>
+            <botSteps>
+                <stepIdentifier>63579e25-a802-47ca-8454-58e63d32db8e</stepIdentifier>
+                <type>Wait</type>
+            </botSteps>
+            <developerName>End_Chat</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>End Chat</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <botDialogs>
+            <botSteps>
+                <botMessages>
+                    <message>Sorry, I didn&apos;t understand that.</message>
+                    <messageIdentifier>f092479a-dcef-49a1-8eb9-1f8158988506</messageIdentifier>
+                </botMessages>
+                <stepIdentifier>7a16f3b7-f9b4-4d74-84f6-08f349647c7f</stepIdentifier>
+                <type>Message</type>
+            </botSteps>
+            <botSteps>
+                <stepIdentifier>a5e5c044-7a3a-40b2-a26b-3661a6f8fccc</stepIdentifier>
+                <type>Wait</type>
+            </botSteps>
+            <developerName>Confused</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>Confused</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <botDialogs>
+            <botSteps>
+                <botMessages>
+                    <message>Unfortunately, there are no agents available at the moment</message>
+                    <messageIdentifier>d664281b-e721-4629-a78b-d80bffe6bad9</messageIdentifier>
+                </botMessages>
+                <stepIdentifier>c723b4e6-87b5-4228-b502-264d5e432ec8</stepIdentifier>
+                <type>Message</type>
+            </botSteps>
+            <botSteps>
+                <stepIdentifier>f5fb9853-6dcb-4d49-b179-bbf984a02e88</stepIdentifier>
+                <type>Wait</type>
+            </botSteps>
+            <developerName>No_Agent_Available</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>No Agent</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <botDialogs>
+            <botSteps>
+                <botMessages>
+                    <message>Unfortunately, a system error occurred. I&apos;ll connect you to an agent who can help.</message>
+                    <messageIdentifier>488161ba-e7c6-49e6-9c76-df455e952e68</messageIdentifier>
+                </botMessages>
+                <stepIdentifier>3412e8f1-2bc4-491e-b863-21a70eac32fe</stepIdentifier>
+                <type>Message</type>
+            </botSteps>
+            <botSteps>
+                <conversationSystemMessage>
+                    <type>Transfer</type>
+                </conversationSystemMessage>
+                <stepIdentifier>6f8a3722-8dd5-469a-bcda-b3a0a237c4b6</stepIdentifier>
+                <type>SystemMessage</type>
+            </botSteps>
+            <developerName>Error_Handling</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>Error Handler</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <conversationSystemDialogs>
+            <dialog>Error_Handling</dialog>
+            <type>ErrorHandling</type>
+        </conversationSystemDialogs>
+        <conversationSystemDialogs>
+            <dialog>No_Agent_Available</dialog>
+            <type>TransferFailed</type>
+        </conversationSystemDialogs>
+        <entryDialog>Welcome</entryDialog>
+        <mainMenuDialog>Main_Menu</mainMenuDialog>
+        <nlpProviders>
+            <language>en_US</language>
+            <nlpProviderType>EinsteinAi</nlpProviderType>
+        </nlpProviders>
+    </botVersions>
+    <contextVariables>
+        <dataType>Text</dataType>
+        <developerName>ChatKey</developerName>
+        <label>Chat Key</label>
+    </contextVariables>
+    <contextVariables>
+        <dataType>Id</dataType>
+        <developerName>ContactId</developerName>
+        <label>Contact Id</label>
+    </contextVariables>
+    <contextVariables>
+        <dataType>Id</dataType>
+        <developerName>EndUserId</developerName>
+        <label>End User Id</label>
+    </contextVariables>
+    <contextVariables>
+        <dataType>Id</dataType>
+        <developerName>RoutableId</developerName>
+        <label>Routable Id</label>
+    </contextVariables>
+    <description>A bot from scratch.</description>
+    <label>Astro</label>
+    <logPrivateConversationData>false</logPrivateConversationData>
+    <richContentEnabled>false</richContentEnabled>
+</Bot>
