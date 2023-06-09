@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AIApplicationConfig xmlns="http://soap.sforce.com/2006/04/metadata">
     <aiApplicationDeveloperName>Winner_of_Today_s_Match</aiApplicationDeveloperName>
-    <applicationId>0PpHs000000ChaO</applicationId>
+    <applicationId>0Pp6e000000g1Sr</applicationId>
     <developerName>Winner_of_Today_s_Match</developerName>
     <insightReasonEnabled>true</insightReasonEnabled>
     <masterLabel>MasterLabel_Winner_of_Today_s_Match</masterLabel>
