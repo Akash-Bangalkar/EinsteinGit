@@ -3,10 +3,6 @@
     <description>Testing Changes</description>
     <label>FlexaBot IST</label>
     <mlIntents>
-        <developerName>Flex_6_5_0_4</developerName>
-        <label>Flex 6.5.0.4</label>
-    </mlIntents>
-    <mlIntents>
         <developerName>Flex_6_5_0_5</developerName>
         <label>Flex 6.5.0.5</label>
     </mlIntents>
