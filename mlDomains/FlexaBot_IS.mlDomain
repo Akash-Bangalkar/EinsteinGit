@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MlDomain xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Testing Changes</description>
     <label>FlexaBot IST</label>
+    <mlIntents>
+        <developerName>Flex_6_5_0_4</developerName>
+        <label>Flex 6.5.0.4</label>
+    </mlIntents>
+    <mlIntents>
+        <developerName>Flex_6_5_0_5</developerName>
+        <label>Flex 6.5.0.5</label>
+    </mlIntents>
+    <mlSlotClasses>
+        <dataType>Text</dataType>
+        <developerName>Version_6_5</developerName>
+        <extractionRegex>@</extractionRegex>
+        <extractionType>Pattern</extractionType>
+        <label>Version 6.5</label>
+    </mlSlotClasses>
 </MlDomain>
